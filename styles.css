@@ -1,0 +1,24 @@
+body {
+  height: 200px;
+  width: 400px;
+  background: url(github-psd-icon.jpg) no-repeat;
+  background-size: 100%;
+}
+input:focus{
+    outline: none;
+}
+a{
+  color: #E2725B;
+  text-decoration: none;
+}
+a:hover {
+  color: darkred;
+}
+div{
+  color: #E2725B;
+  font-weight: bolder;
+  font-size: 1.2em;
+}
+div:hover {
+  color: darkred;
+}
