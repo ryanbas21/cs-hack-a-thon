@@ -6,7 +6,7 @@ function searchByUserName(username) {
         crossDomain: true,
         url: "https://api.github.com/users/" + username,
         headers: {
-            "Authorization": "token d92c3baa96fc034044518a5837f588deaf0b92e3"
+            "Authorization": "token " <---insert token key here
         }
     }).success((data) => {
         console.log(data);
