@@ -1,8 +1,12 @@
 body {
   height: 200px;
   width: 400px;
+  padding-top: 6px;
   background: url(github-psd-icon.jpg) no-repeat;
   background-size: 100%;
+}
+input {
+  margin-bottom: 5px;
 }
 input:focus{
     outline: none;
@@ -15,6 +19,7 @@ a:hover {
   color: darkred;
 }
 div{
+  margin-top: 10px;
   color: #E2725B;
   font-weight: bolder;
   font-size: 1.2em;

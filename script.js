@@ -6,7 +6,7 @@ function searchByUserName (username) {
     type: "GET",
     crossDomain:true,
     url: "https://api.github.com/users/" + username,
-    headers: {"Authorization": "token 089aa30c35d4c877be845f4a04b9976369e08151"}
+    headers: {"Authorization": "token f50d6704aac96fc91241be735f62e477de3855e8"}
     }).success((data) => {
       console.log(data);
       userData.username = data.login;
@@ -50,8 +50,8 @@ function renderData (obj){
     $('.results').append(`<div>Name: ${obj['name']} </div>`);
     $('.results').append(`<div>Followers: ${obj['followers']} </div>`);
     $('.results').append(`<div>Number Of Public Repos: ${obj['public_repos']} </div>`);
-    $('.results').append(`<div>GitHub URL:<a target='_self' href="${url}">  ${url}</a></div>`);
-    $('.results').append(`<div>Repo Link:<a target='_self' href="${repos}">  ${repos}/repos</a></div>`);
+    $('.results').append(`<div><a target='_self' href="${url}">GitHub URL</a></div>`);
+    $('.results').append(`<div><a target='_self' href="${repos}">Repo Link</a></div>`);
 
   }
 
@@ -61,9 +61,6 @@ function checkSelected(){
   if (document.getElementById('username').selected){
     return searchByUserName(value)
   }
-  // if (document.getElementById('fullname').selected) {
-  //   return searchByName(value);
-  // }
 }
 
 document.getElementById('input').addEventListener('keypress', function (e) {
